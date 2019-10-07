@@ -6,9 +6,9 @@ docker push bee25141/multi-client:latest
 docker push bee25141/multi-server:latest
 docker push bee25141/multi-worker:latest
 
-docker push bee25141/multi-client:latest:$SHA
-docker push bee25141/multi-server:latest:$SHA
-docker push bee25141/multi-worker:latest:$SHA
+docker push bee25141/multi-client:$SHA
+docker push bee25141/multi-server:$SHA
+docker push bee25141/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=bee25141/multi-server:$SHA
