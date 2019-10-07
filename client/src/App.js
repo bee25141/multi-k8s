@@ -15,9 +15,7 @@ class App extends Component {
             <br/>
             <br/>
             <br/>
-            <h1 className="App-title">Fib Calculator</h1>
-            {/* <Link to="/">Home</Link> */}
-            {/* <Link to="/otherpage">Other Page</Link> */}
+            <h1 className="App-title">Kubernetes Fib Calculator</h1>
           </header>
           <div>
             <Route exact path="/" component={Fib} />
